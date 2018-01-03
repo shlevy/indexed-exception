@@ -1,0 +1,21 @@
+name:                indexed-exception
+version:             0.1.0.0
+homepage:            https://github.com/shlevy/indexed-monad
+license:             Apache-2.0
+license-file:        LICENSE
+author:              Shea Levy
+maintainer:          shea@shealevy.com
+copyright:           2018 Shea Levy
+category:            Control
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Control.Monad.Indexed.Exception,
+                       Control.Monad.Indexed.Exception.IO,
+                       Control.Monad.Indexed.IO
+  build-depends:       base >=4.10 && <4.11,
+                       indexed >= 0.1.3 && <0.2
+  hs-source-dirs:      src
+  default-language:    Haskell2010
